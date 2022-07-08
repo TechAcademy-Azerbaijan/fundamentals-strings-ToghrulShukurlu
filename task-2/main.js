@@ -1,9 +1,15 @@
-const prompt = require('prompt');
-prompt.start();
 
+const str ="828"
+const arr = str.split('')
+const first = arr[0]
+const last = arr[arr.length-1]
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+if(first>last){
+    console.log(first);
+}
+else if(last>first){
+    console.log(last);
+}
+else{
+    console.log("=");
+}
